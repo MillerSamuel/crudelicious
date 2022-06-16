@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Welcome to CRUDelicious</h1>
+</div>
+    <div class="d-flex justify-content-around" >
+        <h4>check out our most recent dishes</h4> 
+        <a href="/new">Add A Dish</a>
+    </div>
+
+    @foreach (var d in ViewBag.allDishes)
+    {
+        var id=d.DishId;
+        <p> <a href= "/@d.DishId" >@d.Name</a> by @d.Chef</p> 
+    }

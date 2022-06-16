@@ -1,0 +1,9 @@
+<h1>@ViewBag.oneDish.Name</h1>
+<h3>By: @ViewBag.oneDish.Chef</h3>
+
+<p>@ViewBag.OneDish.Description</p>
+<p>Calories: @ViewBag.OneDish.Calories</p>
+<p>Tastiness: @ViewBag.OneDish.Tastiness</p>
+
+    <button class="m-4"><a href="/delete/@ViewBag.OneDish.DishId">Delete</a></button>
+    <button><a href="/edit/@ViewBag.OneDish.DishId">Edit</a></button>
